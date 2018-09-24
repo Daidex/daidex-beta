@@ -1,6 +1,6 @@
 # Daidex Beta Version:
 
-*  `/`
+## In this beta version new functionalities will be tested. Specially those related to ZeroEx library (`0x.js`) and Web3 (`web3.js`)
 
 
 ## How to install
