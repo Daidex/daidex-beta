@@ -1,0 +1,332 @@
+// @import "./normalize.scss";
+// @import "./table.scss";
+//
+// body {
+//   font-family: 'Maven Pro', sans-serif;
+//   background-color: #191B34;
+//   background-image: url("/img/background.png");
+//   background-repeat: no-repeat;
+//   background-position: top;
+//   background-size: cover;
+//   color: white;
+//   width: 100%;
+//   height: 100vh;
+//   display: flex;
+//   flex-direction: column;
+// }
+//
+// header {
+//   display: flex;
+//   height: 70px;
+//   justify-content: space-between;
+// }
+//
+// .public-header {
+//   display: inline-block;
+// }
+//
+// .cubos {
+//   background-image: url("/img/cubos.png");
+//   background-size: 500px;
+//   background-repeat: no-repeat;
+//   background-position: right;
+//   background-position-y: bottom;
+//   background-position-x: calc(100% - 1em);
+//   height: 100vh;
+// }
+//
+// .container {
+//   width: calc(100% - 4em);
+//   max-width: 1000px;
+//   margin: 0 auto;
+//   padding: 0 2em;
+//   padding-top: 1.5em;
+// }
+//
+// .navmenu {
+//   display: flex;
+//   align-items: center;
+// }
+//
+// .navmenu .items {
+//   display: flex;
+// }
+//
+// .navmenu .items .item {
+//   display: flex;
+// }
+//
+// .navmenu .items .item a {
+//   padding: .5em;
+//   text-decoration: none;
+//   color: white;
+// }
+//
+// .navmenu .items .item a:hover {
+//   background-color: rgba(255,255,255, .2);
+//   border-radius: 3px;
+// }
+//
+// .description {
+//   font-size: 21px;
+//   max-width: 450px;
+//   width: 100%;
+//   margin: 3em 0;
+// }
+//
+// .error {
+//   font-size: 42px;
+//   text-transform: uppercase;
+// }
+//
+// .link {
+//   color: white;
+// }
+//
+// .box-error {
+//   text-align: center;
+//   margin-top: 4em;
+// }
+//
+// .header-error {
+//   transform: rotate(180deg);
+//   height: auto;
+// }
+//
+// .form-login-signup {
+//   /* border: 1px dashed red; */
+//   padding: 1.5em 1em;
+//   width: 500px;
+//   margin: 0 auto;
+//   display: flex;
+//   flex-direction: column;
+// }
+//
+// .form-login-signup .btn {
+//   margin: 1em;
+//   display: flex;
+//   justify-content: center;
+// }
+//
+// .form-login-signup p {
+//   margin: 1em;
+// }
+//
+// a {
+//   color: #1FB5E0;
+// }
+//
+// .text {
+//   text-align: center;
+//   justify-content: center;
+//   font-size: 18px;
+// }
+//
+// .btn {
+//   background-color: #21B2E1;
+//   border: none;
+//   border-radius: 3px;
+//   color: white;
+//   font-size: 18px;
+//   padding: 1em;
+//   cursor: pointer;
+//   text-decoration: none;
+// }
+//
+// .blue {
+//   color: #1FB5E0 !important;
+// }
+//
+// .red {
+//   color: red !important;
+// }
+//
+// .green {
+//   color: green !important;
+// }
+//
+// .yellow {
+//   color: #afaf2b !important;
+// }
+//
+// .background-blue {
+//   background-color: #1FB5E0 !important;
+// }
+//
+// .background-red {
+//   background-color: red !important;
+// }
+//
+// .background-green {
+//   background-color: green !important;
+// }
+//
+// .background-yellow {
+//   background-color: #afaf2b !important;
+// }
+//
+// h3.title {
+//   text-align: left;
+//   font-size: 22px;
+//   margin: .5em 0;
+// }
+//
+// .title {
+//   text-align: center;
+//   font-size: 40px;
+//   margin: 0;
+// }
+//
+// .title2 {
+//   text-align: center;
+//   font-size: 40px;
+//   margin: .8em;
+// }
+//
+// input {
+//   border: none;
+//   border-radius: 3px;
+//   padding: 1em;
+//   font-size: 18px;
+//   display: flex;
+//   margin: .5em 1em .5em 1em;
+//   width: calc(100% - 4em);
+// }
+//
+// /* ---------- Wallets ---------- */
+//
+// .wallets {
+//   width: 100%;
+//   display: grid;
+//   grid-gap: 1em;
+//   justify-content: center;
+//   grid-template-columns: repeat(auto-fill, 300px);
+//   margin-bottom: 4em;
+// }
+//
+// .wallets .wallet {
+//   height: 150px;
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   justify-content: center;
+//   background-color: rgba(255, 255, 255, 0.1);
+//   border-radius: 3px;
+//   cursor: pointer;
+// }
+//
+// .wallets .wallet h2.coin-value {
+//   color: rgba(255, 255, 255, .7);
+//   text-align: center;
+//   font-size: 32px;
+//   font-weight: normal;
+//   display: inline-block;
+//   margin: 0;
+// }
+//
+// .wallets .wallet h2.coin-value::after {
+//   content: close-quote;
+//   height: 3px;
+//   background-color: rgba(255, 255, 255, .7);
+//   display: block;
+// }
+// .wallets .wallet .coin-type {
+//   font-size: 16px;
+// }
+//
+// .wallets .wallet h3.coin-local {
+//   color: white;
+//   font-size: 21px;
+//   font-weight: normal;
+//   margin: .5em;
+// }
+//
+// .wallets .wallet .coin-type {
+//   font-size: 14px;
+// }
+//
+// .options {
+//   text-align: right;
+// }
+//
+// /* -----------------------MEDIA QUERY ----------------------- */
+//
+// @media screen and (max-width: 900px) {
+//   .cubos {
+//     background-size: 400px;
+//   }
+// }
+//
+// @media screen and (max-width: 790px) {
+//   .time {
+//     font-size: 36px;
+//   }
+//
+//   .description {
+//     font-size: 18px;
+//   }
+//
+//   .logo {
+//     width: 350px;
+//   }
+// }
+//
+// @media screen and (max-width: 680px) {
+//   .cubos {
+//     background-size: 350px;
+//   }
+// }
+//
+// @media screen and (max-width: 580px) {
+//   .logo {
+//     width: 230px;
+//   }
+// }
+//
+// @media screen and (max-width: 500px) {
+//   .cubos {
+//     background-size: 300px;
+//   }
+// }
+//
+// @media screen and (max-width: 375px) {
+//   .cubos {
+//     background-size: calc(100% - 2em);
+//   }
+//
+//   .logo {
+//     width: 250px;
+//     margin: 0 auto;
+//     display: block;
+//   }
+// }
+//
+// @media screen and (max-width: 320px) {
+//   .time {
+//     font-size: 28px;
+//     text-align: center;
+//   }
+//   .description {
+//      text-align: center;
+//   }
+// }
+//
+// @media (max-width: 360px) and (max-height: 680px) {
+//   .cubos {
+//     background-size: 270px;
+//   }
+//
+//   .logo {
+//     width: 250px;
+//     margin: 0 auto;
+//     display: block;
+//   }
+//
+//   .description {
+//     margin: 1em 0;
+//   }
+//
+//   .time {
+//     margin: 0;
+//   }
+// }

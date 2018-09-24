@@ -1,0 +1,52 @@
+{
+  "name": "coinbtr-pre",
+  "version": "1.0.0",
+  "description": "informative home",
+  "main": "server.js",
+  "scripts": {
+    "build": "gulp",
+    "build:dev": "gulp watch",
+    "server:dev": "nodemon server",
+    "start": "node server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/coinbtr/coinbtr-pre.git"
+  },
+  "author": "Moises De La Cruz <moisesdelacruz@coinbtr.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/coinbtr/coinbtr-pre/issues"
+  },
+  "homepage": "https://gitlab.com/coinbtr/coinbtr-pre#README",
+  "dependencies": {
+    "0x.js": "^1.0.4",
+    "babel-polyfill": "^6.26.0",
+    "empty-element": "^1.0.0",
+    "es6-promise": "^4.2.4",
+    "express": "^4.16.3",
+    "isomorphic-fetch": "^2.2.1",
+    "page": "^1.8.6",
+    "pug": "^2.0.3",
+    "sweetalert": "^2.1.0",
+    "sweetalert2": "^7.26.10",
+    "title": "^3.3.1",
+    "web3": "^1.0.0-beta.36",
+    "websocket": "^1.0.28",
+    "yo-yo": "^1.4.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-plugin-syntax-async-functions": "^6.13.0",
+    "babel-plugin-transform-regenerator": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babelify": "^8.0.0",
+    "browserify": "^16.2.2",
+    "gulp": "^3.9.1",
+    "gulp-livereload": "^3.8.1",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.1",
+    "vinyl-source-stream": "^2.0.0",
+    "watchify": "^3.11.0"
+  }
+}

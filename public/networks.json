@@ -1,0 +1,39 @@
+{
+  "Mainnet":
+  {
+    "ZRX": "0xe41d2489571d322189246dafa5ebde1f4699f498",
+    "WETH": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+    "DAI": "0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359",
+    "DGD": "0xe0b7927c4af23765cb51314a0e0521a9645f0e2a",
+    "MKR": "0x9f8F72aA9304c8B593d555F12eF6589cC3A579A2",
+    "REP": "0x1985365e9f78359a9b6ad760e32412f4a445e862",
+    "BAT": "0x0d8775f648430679a709e98d2b0cb6250d2887ef",
+    "MANA": "0x0f5d2fb29fb7d3cfee444a200298f468908cc942",
+    "ZIL": "0x05f4a42e251f2d52b8ed15e9fedaacfcef1fad27",
+    "MLN": "0xbeb9ef514a379b997e0798fdcc901ee474b6d9a1",
+    "REQ": "0x8f8221afbb33998d8584a2b05749ba73c37a938a",
+    "STORM": "0xd0a4b8946cb52f0661273bfbc6fd0e0c75fc6433",
+    "AION": "0x4ceda7906a5ed2179785cd3a40a69ee8bc99c466"
+  },
+  "Kovan":
+  {
+    "ZRX": "0x6ff6c0ff1d68b964901f986d4c9fa3ac68346570",
+    "WETH": "0xd0a1e359811322d97991e03f863a0c30c2cf029c",
+    "DAI": "0xc4375b7de8af5a38a93548eb8453a498222c4ff2",
+    "DGD": "0xeee3870657e4716670f185df08652dd848fe8f7e",
+    "MKR": "0x1dad4783cf3fe3085c1426157ab175a6119a04ba",
+    "REP": "0xb18845c260f680d5b9d84649638813e342e4f8c9"
+  },
+  "Ropsten":
+  {
+    "ZRX": "0xa8e9fa8f91e5ae138c74648c9c304f1c75003a8d",
+    "WETH": "0xc778417e063141139fce010982780140aa0cd5ab",
+    "DAI":"0xf3f54F3f9f99b119887BeAaf2E5045516A1766d2"
+  },
+  "Rinkeby":
+  {
+    "ZRX": "0x00f58d6d585f84b2d7267940cede30ce2fe6eae8",
+    "WETH": "0xc778417e063141139fce010982780140aa0cd5ab"
+  },
+  "Symbols":["WETH", "ZRX", "DAI", "DGD", "MKR", "REP"]
+}

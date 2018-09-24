@@ -1,0 +1,348 @@
+body {
+  font-family: 'Oxygen', sans-serif;
+}
+
+header {
+  height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(-130deg, #1d2435, #171a2a);
+}
+
+nav.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul.items {
+    display: flex;
+}
+
+li.item {
+    display: flex;
+}
+
+.item a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  padding: 1em;
+}
+
+.logo {
+  padding: .3em;
+  border-radius: 5px;
+  margin: .3em .5em;
+  width: 130px;
+}
+
+.container {
+  height: calc(100vh - 160px);
+  display: flex;
+  align-items: center;
+  padding: 2em;
+  justify-content: center;
+}
+
+.container .content {
+  max-width: 1200px;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.form {
+  background-color: white;
+  border-radius: 3px;
+  padding: 1em;
+  max-width: 400px;
+  width: 100%;
+  box-shadow: 1px 1px 10px #00e5eb;
+}
+
+.form:hover {
+  box-shadow: 2px 2px 13px #00e5eb;
+}
+
+.form .input {
+  border: 1px solid rgba(128, 128, 128, 0.3);
+  padding: .5em;
+  display: flex;
+  flex-direction: column;
+  margin: .5em;
+}
+
+.form label {
+  font-size: 12px;
+  margin: .5em 0;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.form input {
+  border: none;
+  font-size: 14px;
+  width: calc(100% - 10px) !important;
+  outline: 0;
+  text-align: left;
+}
+
+.form input[type="checkbox"] {
+  margin: 4px;
+  transform: scale(1.5);
+  width: 40px;
+}
+
+.form .input.checkbox {
+  flex-direction: row;
+  align-items: center;
+}
+
+.form button {
+  display: block;
+  margin: 0 auto;
+}
+.description {
+  color: white;
+  max-width: 400px;
+  width: 100%;
+}
+
+.description p {
+  color: silver;
+}
+
+.description .title {
+  font-size: 36px;
+  margin: 0;
+}
+
+/* Generics class */
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+}
+
+.btn {
+    border: none;
+    padding: 1em 1.5em;
+    border-radius: 3px;
+    color: white;
+    background-color: grey;
+    margin-right: 1em;
+    outline: 0;
+}
+
+.btn:hover {
+  box-shadow: 2px 2px 13px #00e5eb;
+  transition: .1s;
+}
+
+.blue {
+  background-image: linear-gradient(-136deg, rgb(0, 255, 182) 5%, rgb(0, 220, 255) 93%);
+}
+
+.input {
+  display: flex;
+  justify-content: space-between;
+  margin: .2em 0;
+}
+
+.input button {
+  width: 30%;
+  border-radius: 0 3px 3px 0;
+}
+
+.input input {
+  border-radius: 3px 0 0 3px;
+  border: none;
+  width: calc(70% - 2em);
+  font-size: 14px;
+  padding: 0 .5em;
+}
+
+.header-accounts {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-right: 1em;
+}
+
+.metamask {
+  color: white;
+  text-decoration: none;
+
+}
+
+.header-accounts .metamask::before {
+  content: '';
+  background-image: url(https://nogo10.gitbooks.io/ether-camp-live-studio-primer/content/metamask.png);
+  background-size: 34px 21px;
+  display: inline-block;
+  margin-right: 3px;
+  width: 25px;
+  height: 20px;
+  vertical-align: bottom;
+}
+
+/* -------------------------------------------------------------------------- */
+/*the container must be positioned relative:*/
+.custom-select {
+  position: relative;
+}
+.custom-select select {
+  border-radius: 3px;
+  display: none; /*hide original SELECT element:*/
+}
+.select-selected {
+  background-color: white;
+}
+/*style the arrow inside the select element:*/
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #757575 transparent transparent transparent;
+}
+/*point the arrow upwards when the select box is open (active):*/
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent #fff transparent;
+  top: 7px;
+}
+/*style the items (options), including the selected item:*/
+.select-items div,.select-selected {
+  color: #757575;
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  cursor: pointer;
+}
+/*style items (options):*/
+.select-items {
+  position: absolute;
+  background-color: white;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+/*hide the items when the select box is closed:*/
+.select-hide {
+  display: none;
+}
+.select-items div:hover, .same-as-selected {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 36px;
+  height: 20px;
+}
+
+.switch input {display:none;}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 1px;
+  bottom: 1px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(17px);
+  -ms-transform: translateX(17px);
+  transform: translateX(17px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+.loader {
+  border: 5px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 5px solid #3498db;
+  width: 15px;
+  height: 15px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+}
+/* Safari */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.alert {
+  padding: 20px;
+  background-color: #4CAF50;
+  color: white;
+}
+
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closebtn:hover {
+  color: black;
+}
+
+.swal-button {
+  padding: 7px 19px;
+  border-radius: 2px;
+  background-image: linear-gradient(-130deg, #1d2435, #171a2a);
+  font-size: 12px;
+  border: 1px solid #3e549a;
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.3);
+}
