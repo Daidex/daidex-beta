@@ -1,11 +1,6 @@
-# CoinBTR Beta Version:
+# Daidex Beta Version:
 
 *  `/`
-*  `/signin`
-*  `/signup`
-*  `/profile`
-*  `/change_password`
-*  `/dashboard`
 
 
 ## How to install
@@ -18,3 +13,4 @@ $ npm run build
 
 $ npm start
 ```
+Go to *localhost:3000*
